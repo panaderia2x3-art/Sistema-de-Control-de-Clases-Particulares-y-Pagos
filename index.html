@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de control de Clases Particulares y Pagos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro de Alumnos</a></li>
+                <li><a href="pagos.html">Registro de Pagos</a></li>
+                <li><a href="consultas.html">Consultas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Bienvenido al Sistema de Control de Clases Particulares y Pagos</h1>
+            <p>Este sistema le permite registrar alumnos, clases y pagos de manera eficiente.</p>
+            <article>
+                <h2>Registro de Alumnos</h2>
+                <p>Ingrese los datos del alumno y la clase que desea registrar:</p>
+                <p>Nombre:</p>
+                <input type="text" name="nombre" method="post" placeholder="Nombre del estudiante">
+                <p>Apellido:</p>
+                <input type="text" name="apellido" method="post" placeholder="Apellido del estudiante">
+                <p>Materia:</p>
+                <input type="text" name="materia" method="post" placeholder="Materia">
+                <p>Costo por hora:</p>
+                <input type="text" name="costo" method="post" placeholder="Costo de la clase por hora">
+                <p>Horas de clase:</p> 
+                <input type="text" name="hora" method="post" placeholder="Horas de clase">
+                <p>Fecha de la clase:</p>
+                <input type="text" name="fecha" method="post" placeholder="Fecha de la clase">
+                <br><br>
+                <button type="submit" name="guardar">Registrar Alumno</button>
+            </article>
+        </section>
+
+        <section>
+            <h2>Alumnos Registrados</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Materia</th>
+                        <th>Costo por hora</th>
+                        <th>Horas de clase</th>
+                        <th>Fecha de la clase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Generico nom</td>
+                        <td>Generico ape</td>
+                        <td>Generico mat</td>
+                        <td>Generico costo</td>
+                        <td>Generico horas</td>
+                        <td>Generico fecha</td>
+                    </tr>
+                </tbody>
+        </section>
+    </main>
+    
+</body>
+</html>
