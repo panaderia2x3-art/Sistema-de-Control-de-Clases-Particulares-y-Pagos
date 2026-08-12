@@ -20,25 +20,34 @@
         <section>
             <h1>Bienvenido al Sistema de Control de Clases Particulares y Pagos</h1>
             <p>Este sistema le permite registrar alumnos, clases y pagos de manera eficiente.</p>
-            <article>
+            <article >
+                <form id="formulario">
                 <h2>Registro de Alumnos</h2>
                 <p>Ingrese los datos del alumno y la clase que desea registrar:</p>
                 <p>Nombre:</p>
                 <input type="text" name="nombre" method="post" placeholder="Nombre del estudiante">
+                <small id="error-nombre" style="color: red; display: block;"></small>
                 <p>Apellido:</p>
                 <input type="text" name="apellido" method="post" placeholder="Apellido del estudiante">
+                <small id="error-apellido" style="color: red; display: block;"></small>
                 <p>Materia:</p>
                 <input type="text" name="materia" method="post" placeholder="Materia">
+                <small id="error-materia" style="color: red; display: block;"></small>
                 <p>Costo por hora:</p>
-                <input type="text" name="costo" method="post" placeholder="Costo de la clase por hora">
+                <input type="number" name="costo" method="post" placeholder="Costo de la clase por hora" step="0.01">
+                <small id="error-costo" style="color: red; display: block;"></small>
                 <p>Horas de clase:</p> 
-                <input type="text" name="hora" method="post" placeholder="Horas de clase">
+                <input type="number" name="hora" method="post" placeholder="Horas de clase">
+                <small id="error-hora" style="color: red; display: block;"></small>
                 <p>Fecha de la clase:</p>
-                <input type="text" name="fecha" method="post" placeholder="Fecha de la clase">
+                <input type="date" name="fecha" method="post" placeholder="Fecha de la clase">
                 <br><br>
-                <button type="submit" name="guardar">Registrar Alumno</button>
+                <button type="submit" name="guardar" id="boton_guardar">Registrar Alumno</button>
+                </form>
             </article>
         </section>
+
+        <script src="comprobacionForm.js" defer></script>
 
         <section>
             <h2>Alumnos Registrados</h2>
