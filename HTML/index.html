@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de control de Clases Particulares y Pagos</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -21,7 +23,7 @@
             <h1>Bienvenido al Sistema de Control de Clases Particulares y Pagos</h1>
             <p>Este sistema le permite registrar alumnos, clases y pagos de manera eficiente.</p>
             <article>
-                <form action="guardar_alumnos.php" method="post" id="formulario">
+                <form action="../PHP/guardar_alumnos.php" method="post" id="formulario">
                     <h2>Registro de Alumnos</h2>
                     <p>Ingrese los datos del alumno y la clase que desea registrar:</p>
                     <p>Nombre:</p>
@@ -36,7 +38,7 @@
                     <p>Costo por hora:</p>
                     <input type="number" name="costo" placeholder="Costo de la clase por hora" step="0.01" required>
                     <small id="error-costo" style="color: red; display: block;"></small>
-                    <p>Horas de clase:</p> 
+                    <p>Horas de clase:</p>
                     <input type="number" name="hora" placeholder="Horas de clase" required>
                     <small id="error-hora" style="color: red; display: block;"></small>
                     <p>Fecha de la clase:</p>
@@ -45,6 +47,42 @@
                     <button type="submit" name="guardar" id="boton_guardar">Registrar Alumno</button>
                 </form>
             </article>
+        </section>
+
+        <section>
+            <article>
+                <form action="../PHP/eliminar.php" id="eliminar" method="post">
+                    <h2>Eliminar alumnos</h2>
+                    <input type="number" name="id" placeholder="Ingrese id del alumno" required>
+                    <button type="submit" name="eliminar" id="boton_eliminar">Eliminar</button>
+                </form>
+            </article>
+
+            <article>
+
+                <form action="../PHP/editar.php" id="editar" method="post">
+                    <h2>Editar informacion de alumnos</h2>
+                    <p>Ingrese los datos del alumno y la clase que desea registrar:</p>
+                    <p>id:</p>
+                    <input type="text" name="id" placeholder="Ingrese id del estudiante" required>
+                    <p>Nombre:</p>
+                    <input type="text" name="nombre" placeholder="Nombre del estudiante" required>
+                    <p>Apellido:</p>
+                    <input type="text" name="apellido" placeholder="Apellido del estudiante" required>
+                    <p>Materia:</p>
+                    <input type="text" name="materia" placeholder="Materia" required>
+                    <p>Costo por hora:</p>
+                    <input type="number" name="costo" placeholder="Costo de la clase por hora" step="0.01" required>
+                    <p>Horas de clase:</p>
+                    <input type="number" name="hora" placeholder="Horas de clase" required>
+                    <p>Fecha de la clase:</p>
+                    <input type="date" name="fecha" placeholder="Fecha de la clase" required>
+                    <br><br>
+                    <button type="submit" name="guardar" id="boton_guardar">Editar alumno</button>
+
+                </form>
+            </article>
+
         </section>
 
         <section>
@@ -63,20 +101,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Generico nom</td>
-                        <td>Generico ape</td>
-                        <td>Generico mat</td>
-                        <td>Generico costo</td>
-                        <td>Generico horas</td>
-                        <td>Generico fecha</td>
-                        <td>Generico total</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    
-    <script src="comprobacionForm.js" defer></script>
-    <script src="TRSL_obtenerAlumno_to_index.js" defer></script>
+
+    <script src="../JS/comprobacionForm.js" defer></script>
+    <script src="../JS/TRSL_obtenerAlumno_to_index.js" defer></script>
 </body>
+
 </html>

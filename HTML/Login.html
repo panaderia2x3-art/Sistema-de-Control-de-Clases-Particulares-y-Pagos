@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Registro de profesor</h1>
+    <h3>Login</h3>
+    <form action="../PHP/Login.php" method="post" id="id_login">
+        <p>Nombre de Usuario</p>
+        <input type="text" name="username" placeholder="Ingrese su nombre" required>
+        <small id="error-username" style="color: red; display: block; font-size: 10px;"></small>
+        <p>Contraseña</p>
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña" required>
+        <small id="error-contraseña" style="color: red; display: block;"></small>
+        <br><br>
+        <button id="boton">Ingresar</button>
+    </form>
+    <script src="CPBC_login.js" defer></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {  
-    fetch("obtener_alumnos.php")
+    fetch("../PHP/obtener_alumnos.php")
         .then(response => response.json())
         .then(data => {
             const tabla = document.querySelector("#tabla_alumnos tbody");

@@ -9,11 +9,12 @@
         $total = $hora * $costoxhora;
         $fecha =$_POST['fecha'];
         
+        
         $sql = "INSERT INTO alumnos (nombre, apellido, materia, costo_por_hora, horas_clase, total, fecha_clase) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$nombre, $apellido, $materia, $costoxhora, $hora, $total, $fecha]);
 
-        header("Location: index.html");
+        header("Location: ../HTML/index.html");
         exit;
     }
 ?>

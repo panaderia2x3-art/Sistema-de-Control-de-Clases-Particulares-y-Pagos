@@ -86,9 +86,3 @@ function verificarLetra(campo) {
     return true;
 }
 
-formulario.addEventListener("submit", (evento) => {
-    evento.preventDefault();
-    alert("Alumno correctamente registrado.");
-    formulario.reset();
-    boton_guardar.disabled = true;
-})
